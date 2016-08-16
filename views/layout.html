@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>layout</title>
+  <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="js/map.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="/bootstrap/js/transition.js"></script>
+  <script type="text/javascript" src="/bootstrap/js/collapse.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <link href="/stylesheets/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
+  <link href="/stylesheets/datepicker.css" rel="stylesheet">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWcB5cJ5n7s1tyCiPVHiT2EPUHTbvSlyg"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Trip Planner!</a>
+    </div>
+    <ul class="nav navbar-nav" style="color:white;">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+{% block content%}{% endblock %}
+
+
+</body>
+</html>

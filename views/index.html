@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+{% block content%}
+  <div class="col-lg-10">
+    <div class="form-group search-selection">
+      <div class="col-lg-3">
+        <label for="hotels">Hotels:</label> <br />
+        <select id="hotels">
+          <option value="none">--</option>
+          {% for hotel in Hotel %}
+            <option value="{{hotel.name}}">{{hotel.name}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-lg-3">
+        <label for="restaurants">Restaurants:</label><br />
+        <select id="restaurants">
+          <option value="none">--</option>
+          {% for restaurant in Restaurant %}
+            <option value="{{restaurant.name}}">{{restaurant.name}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-lg-3">
+        <label for="activities">Activities:</label><br />
+        <select  id="activities">
+          <option value="none">--</option>
+          {% for activity in Activity %}
+            <option value="{{activity.name}}">{{activity.name}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-lg-3">
+        <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"> Search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="map col-lg-10">
+    <div id="map-canvas" style="height:85vh"> </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="day-content">
+        <h3>Date:</h3>
+        <div class="input-append date" id="datepicker" data-date="01-08-2016" data-date-format="dd-mm-yyyy">
+          <input size="16" type="text" value="08-01-2016" readonly>
+          <span class="add-on glyphicon glyphicon-calendar"></span>
+        </div>
+        <h3>My Hotel: </h3>
+        <h4> Double Tree </h4>
+        <h3>My Restaurants: </h3>
+        <h4>Pylos</h4>
+        <h3>My Activities:</h3>
+        <h4>Battery Park</h4>
+        <h4>Ground Zoo</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+$('#datepicker').datepicker();
+});
+</script>

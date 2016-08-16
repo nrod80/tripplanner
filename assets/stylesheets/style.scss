@@ -1,0 +1,58 @@
+
+body {
+  background-color:  #bbb;
+  overflow: hidden;
+}
+.navbar-custom {
+  background-color : #84AFA2;
+  font-family: "Patua One";
+
+  .nav {
+    font-size: 1.4em;
+  }
+
+  .navbar-brand {
+    font-size: 1.7em;
+  }
+
+  a {
+    color : #444;
+  }
+
+  .active {
+    background-color:  #eaeaea
+  }
+}
+
+h3 {
+  font-family: "Patua One";
+  color: #444;
+}
+
+h4 {
+  font-family: "Cabin Condensed";
+  color: #555;
+}
+
+.col-lg-10 {
+  margin-bottom: 15px
+}
+
+.search-selection {
+  label {
+    font-family: "Cabin Condensed";
+    margin-top: 2px;
+    font-size: 1.3em;
+    color: #444;
+  };
+  select {
+    width: 100%;
+  };
+  button {
+    margin-top: 15px;
+  };
+}
+
+.panel {
+  background-color: #fff5e5;
+}
